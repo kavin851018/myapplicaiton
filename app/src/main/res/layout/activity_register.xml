@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/login_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/account"
+        android:id="@+id/registerAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"/>
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:hint="@string/password"
+        android:id="@+id/registerPassword"
+        android:layout_below="@id/registerAccount"
+        android:layout_centerHorizontal="true"
+        android:ems="10"/>
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerName"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:hint="@string/name"
+        android:layout_below="@id/registerPassword"
+        android:layout_centerHorizontal="true"
+        android:ems="10"/>
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:text="09"
+        android:id="@+id/registerPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/registerName"
+        android:drawableLeft="@drawable/ic_action_phone"
+        android:ems="10"
+        android:digits="0123456789"
+        android:maxLength="10"
+        />
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerEmail"
+        android:inputType="textEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/registerPhone"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:hint="@string/email"
+        android:ems="10"/>
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/registerButton"
+        android:layout_below="@id/registerEmail"
+        android:layout_centerHorizontal="true"
+        android:text="@string/register"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+

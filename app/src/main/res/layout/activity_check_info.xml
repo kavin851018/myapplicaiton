@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/login_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/memberInfo"
+            style="@style/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/account"
+            android:id="@+id/checkInfoAccount"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:ems="10"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_action_password"
+            android:hint="@string/password"
+            android:id="@+id/checkInfoPassword"
+            android:layout_below="@id/checkInfoAccount"
+            android:layout_centerHorizontal="true"
+            android:ems="10"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkInfoName"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/ic_action_name"
+            android:hint="@string/name"
+            android:layout_below="@id/checkInfoPassword"
+            android:layout_centerHorizontal="true"
+            android:ems="10"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:text="09"
+            android:id="@+id/checkInfoPhone"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/checkInfoName"
+            android:drawableLeft="@drawable/ic_action_phone"
+            android:ems="10"
+            android:digits="0123456789"
+            android:maxLength="10"
+            />
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkInfoEmail"
+            android:inputType="textEmailAddress"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/checkInfoPhone"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:hint="@string/email"
+            android:ems="10"/>
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/finishEditButton"
+            android:layout_below="@id/checkInfoEmail"
+            android:layout_centerHorizontal="true"
+            android:text="@string/finishEdit"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
+
+
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/login_background">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/account"
+        android:id="@+id/accountEditText"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_action_user"
+        />
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:id="@+id/passwordEditText"
+        android:layout_below="@id/accountEditText"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_action_password"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/loginButton"
+        android:layout_below="@id/passwordEditText"
+        android:layout_centerHorizontal="true"
+        android:text="@string/loginButton"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_below="@id/loginButton"
+        android:text="@string/forgetPassword"
+        android:layout_alignLeft="@id/loginButton"
+        android:id="@+id/LoginForgotPasswordButton"
+        />
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:text="@string/register"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_below="@id/loginButton"
+        android:layout_alignRight="@id/loginButton"
+        android:id="@+id/LoginRegisterButton"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
